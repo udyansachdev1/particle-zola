@@ -2,21 +2,26 @@
 <div class="user-details">
   <h1> My Expertise </h1>
   <!-- <p> {{ config.extra.user_description }} </p> -->
+
 </div>
   <div class="user">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
     <div class="tech">
       <h2>Coding Languages</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
+      <i class="devicon-python-plain-wordmark colored"></i>
+      <i class="devicon-mysql-plain-wordmark colored"></i>
+      <i class="devicon-rstudio-plain colored"></i>
       <p>Python, R, R Shiny, Git, SQL,
         MATLAB, Microsoft Office Suite</p>
     </div>
     <div class="tech">
       <h2>Tools & Libraries</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
+      <i class="devicon-numpy-original-wordmark colored"></i>  
+      <i class="devicon-pytorch-plain-wordmark colored"></i>
+      <i class="devicon-pandas-original-wordmark colored"></i>
+      <i class="devicon-tensorflow-original-wordmark colored"></i>   
       <p>Pandas, NumPy, Scikit-Learn,
         Data Visualization, Machine Learning Models, Deep
         Learning, Natural Language Processing (NLP), Data
@@ -24,44 +29,54 @@
         Analysis, Hypothesis Testing, Experimental Design</p>
     </div>
     <div class="tech">
-      <h2>Cloud Platform</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
+      <h2>Cloud Platform</h2>   
+      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+      <i class="devicon-azure-plain-wordmark colored"></i>
       <p>Hadoop, Spark, Hive, AWS, Azure, Data Warehousing, Data Pipelines</p>
     </div>
     <div class="tech">
       <h2>Model Deployment</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
+      <i class="devicon-docker-plain-wordmark colored"></i>
+      <i class="devicon-flask-original-wordmark colored"></i>
       <p>Docker, Flask</p>
 </div>
 {% endmacro about %}
 
 {% macro education() %}
-  <div class="user-details">
+  <div class="user-details" style="padding: 0 20px;">
     <h1> Education </h1>
     <p> {{ config.extra.education_description }} </p>
   </div>
-  <div class="user" style="display: flex; justify-content: space-between;">
+  <div class="user" style="display: flex; justify-content: space-between; padding: 0 20px;">
     <div class="tech" style="text-align: center;">
-      <img src="{{ config.base_url ~ "/img/duke_logo.jpeg" }}" alt="Duke University Logo" style="max-width: 300px; height: 200px; margin-bottom: 10px;">
-      <h2>Masters in Data Science</h2>
+      <img src="{{ config.base_url ~ "/img/duke_logo.jpeg" }}" alt="Duke University Logo" style="max-width: 300px; height: 200px; margin-left: 20px;margin-bottom: 10px;">
+      <h2 style="font-size: .4em;">Masters in Data Science</h2>
       <p>
-        Duke University, Graduating in May 2025<br>
-        GPA: 4.0
+        <h4>Graduating in May 2025 </h4>
+        <h3> Courses Completed/Ongoing: </h3>
+        <p> 1.Modeling and Representation of Data <br>
+        2.Principles of Machine Learning<br>
+        3.Data Analysis Scale at Cloud<br>
+        4.Introduction to Natural Language Processing<br>
+        5.Statistical Computation<br>
+        6.Casual Inference<br>
+        7.Data Engineering Tools<br>
+        8.Practicing Data Science : Tools<br> </p>
+        <h4>GPA: 4.0</h4>
       </p>
     </div>
     <div class="tech" style="text-align: center;">
-      <img src="{{ config.base_url ~ "/img/anu_logo.jpeg" }}" alt="Australian National University Logo" style="max-width: 300px; height: 200px; margin-bottom: 10px;">
-      <h2>Undergraduate in Mechatronic Systems</h2>
+      <img src="{{ config.base_url ~ "/img/anu_logo.jpeg" }}" alt="Australian National University Logo" style="max-width: 300px; height: 200px;margin-right: 20px; margin-bottom: 10px;">
+      <h2 style="font-size: .4em;">Undergraduate in Mechatronic Systems</h2>
       <p>
-        Australian National University, Graduated in 2021
+        Bachelor of Engineering with Honours -
+        Mechatronic Systems,<br>
+        Graduated in 2021
       </p>
     </div>
   </div>
 {% endmacro education %}
+
 
 
 {% macro projects() %}
