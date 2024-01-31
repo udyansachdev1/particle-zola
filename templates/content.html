@@ -1,7 +1,7 @@
 {% macro about() %}
 <div class="user-details">
   <h1> My Expertise </h1>
-  <p> {{ config.extra.user_description }} </p>
+  <!-- <p> {{ config.extra.user_description }} </p> -->
 </div>
   <div class="user">
     <div class="tech">
@@ -39,13 +39,38 @@
 </div>
 {% endmacro about %}
 
+{% macro education() %}
+  <div class="user-details">
+    <h1> Education </h1>
+    <p> {{ config.extra.education_description }} </p>
+  </div>
+  <div class="user" style="display: flex; justify-content: space-between;">
+    <div class="tech" style="text-align: center;">
+      <img src="{{ config.base_url ~ "/img/duke_logo.jpeg" }}" alt="Duke University Logo" style="max-width: 300px; height: 200px; margin-bottom: 10px;">
+      <h2>Masters in Data Science</h2>
+      <p>
+        Duke University, Graduating in May 2025<br>
+        GPA: 4.0
+      </p>
+    </div>
+    <div class="tech" style="text-align: center;">
+      <img src="{{ config.base_url ~ "/img/anu_logo.jpeg" }}" alt="Australian National University Logo" style="max-width: 300px; height: 200px; margin-bottom: 10px;">
+      <h2>Undergraduate in Mechatronic Systems</h2>
+      <p>
+        Australian National University, Graduated in 2021
+      </p>
+    </div>
+  </div>
+{% endmacro education %}
+
+
 {% macro projects() %}
 <div class="user-details">
   <h1> Featured Projects </h1>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/financial.jpeg" }}" />
   </div>
   <div class="contents">
     <h3>Financial Stock Analysis </h3>
@@ -61,7 +86,7 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/document.png" }}" />
   </div>
   <div class="contents-right">
     <h3>Document Classification</h3>
@@ -76,7 +101,7 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/Police.jpg" }}" />
   </div>
   <div class="contents-left">
     <h3>Behind the Badge</h3>
@@ -91,7 +116,7 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/markov.png" }}" />
   </div>
   <div class="contents-right">
     <h3>Markov Text Generation</h3>
@@ -106,7 +131,7 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/pos.jpeg" }}" />
   </div>
   <div class="contents-left">
     <h3>POS Tagging Project</h3>

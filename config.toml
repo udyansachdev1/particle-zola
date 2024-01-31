@@ -25,7 +25,7 @@ user_title = "Data Scientist"
 email = "udyan.sachdev@duke.edu"
 twitter_username = "udyan-sachdev"
 github_username =  "UdyanSachdev"
-gplus_username =  "lorem_ipsum"
-
+#gplus_username =  "lorem_ipsum"
+education_description = ''
 # Google-analytics
 google_analytics.id = ""
