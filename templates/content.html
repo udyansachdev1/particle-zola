@@ -1,33 +1,41 @@
 {% macro about() %}
- <div class="user-details">
+<div class="user-details">
   <h1> My Expertise </h1>
   <p> {{ config.extra.user_description }} </p>
 </div>
   <div class="user">
     <div class="tech">
-      <h2>Design</h2>
+      <h2>Coding Languages</h2>
       <i class="devicon-html5-plain-wordmark"></i>
       <i class="devicon-bootstrap-plain-wordmark colored"></i>
       <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Python, R, R Shiny, Git, SQL,
+        MATLAB, Microsoft Office Suite</p>
     </div>
     <div class="tech">
-      <h2>Code</h2>
+      <h2>Tools & Libraries</h2>
       <i class="devicon-javascript-plain colored"></i>
       <i class="devicon-react-original-wordmark colored"></i>
       <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Pandas, NumPy, Scikit-Learn,
+        Data Visualization, Machine Learning Models, Deep
+        Learning, Natural Language Processing (NLP), Data
+        Mining, Caret, dplyr, Tableau, Keras, PyTorch,Time Series
+        Analysis, Hypothesis Testing, Experimental Design</p>
     </div>
     <div class="tech">
-      <h2>Tools</h2>
+      <h2>Cloud Platform</h2>
       <i class="devicon-git-plain"></i>
       <i class="devicon-gulp-plain colored"></i>
       <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Hadoop, Spark, Hive, AWS, Azure, Data Warehousing, Data Pipelines</p>
     </div>
+    <div class="tech">
+      <h2>Model Deployment</h2>
+      <i class="devicon-git-plain"></i>
+      <i class="devicon-gulp-plain colored"></i>
+      <i class="devicon-atom-original-wordmark"></i>
+      <p>Docker, Flask</p>
 </div>
 {% endmacro about %}
 
@@ -40,12 +48,15 @@
     <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3>Financial Stock Analysis </h3>
     <ul>
-      <li> Featured Skills</li>
+    <!-- <li> Featured Skills</li> -->
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>Created a Flask App hosted on Azure
+      for public access, utilizing Delta Tables from Databricks,
+      Docker image from DockerHub, Azure Web App for
+      deployment, and external APIs for data predictions.</p>
+    <!-- <a class="project-link" href="#">Check it out</a> -->
   </div>
 </div>
 <div class="user-projects">
@@ -53,13 +64,58 @@
     <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>Document Classification</h3>
     <ul>
-      <li> Featured Skills</li>
+    <!--  <li> Featured Skills</li> -->
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>Developed models for categorizing
+      documents based on content.</p>
+    <!--  <a class="project-link" href="#">Check it out</a> -->
+  </div>
+</div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-left">
+    <h3>Behind the Badge</h3>
+    <ul>
+    <!--  <li> Featured Skills</li> -->
+    </ul>
+    <p>Decoding Police Shootings in America - A
+      Socioeconomic Inquiry</p>
+    <!-- <a class="project-link" href="#">Check it out</a> -->
+  </div>
+</div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Markov Text Generation</h3>
+    <ul>
+    <!--  <li> Featured Skills</li> -->
+    </ul>
+    <p>Implemented a text generation
+      model using Markov chains</p>
+    <!-- <a class="project-link" href="#">Check it out</a> -->
+  </div>
+</div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+  </div>
+  <div class="contents-left">
+    <h3>POS Tagging Project</h3>
+    <ul>
+    <!--  <li> Featured Skills</li> -->
+    </ul>
+    <p>Analyzed parts of speech in text using
+      Natural Language Processing techniques.</p>
+    <!-- <a class="project-link" href="#">Check it out</a> -->
   </div>
 </div>
 {% endmacro projects %}
-
