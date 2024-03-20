@@ -1,18 +1,31 @@
-name = "particle"
-description = "Particle theme for Zola"
-license = "MIT"
-homepage = "https://github.com/svavs/particle-zola"
-min_version = "0.16.1"
-demo = "https://particle-zola.vercel.app/"
+# The URL the site will be built for
+base_url = "https://us26-webpage-udyansachdev-ec56d3741f35a6fe7a13c49f013f37240b0f6.gitlab.io"
 
-[author]
-name = "Silvano Sallese"
-homepage = "https://svavs.github.io/"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-[original]
-author =  "Anon Developer"
-homepage = "https://nrandecker.github.io/particle/"
-repo = "https://github.com/nrandecker/particle" 
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "particle-zola"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true   
 
 [extra]
+# Put all your custom variables here
 
+# Site settings
+description = "A blog about lorem ipsum dolor sit amet"
+
+# User settings
+username = "Udyan Sachdev"
+user_description = ""
+user_title = "Master's Student in Data Science at Duke University"
+email = "udyan.sachdev@duke.edu"
+twitter_username = "udyan-sachdev"
+github_username = "UdyanSachdev"
+gplus_username = "lorem_ipsum"
+education_description = "Student"
